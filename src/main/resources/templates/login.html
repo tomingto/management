@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+<style>
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(/image/backgroud.png) no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        position: absolute;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image/llnyhomepage.jpg');
+    }
+
+    .shuru {
+        width: 20%;
+        height: 30%;
+
+        position: relative;
+        left: 40%;
+        top: 30%;
+    }
+
+    #userlogin {
+        color: #FFFFFF;
+        font-size: 25px;
+    }
+
+    #user {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 25px;
+        border-radius: 6px;
+        border: none;
+        border: 1px solid #ccc;
+        outline: none;
+        text-indent: 1em;
+
+    }
+
+    #pwd {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 25px;
+        text-indent: 1em;
+        border-radius: 6px;
+        border: none;
+        border: 1px solid #ccc;
+        outline: none;
+
+    }
+
+    #login {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        border: none;
+        /* background-color:#5EABEB;*/
+        background-color: #3B8EEA;
+        font-size: 20px;
+        color: #FFFFFF;
+        outline: none;
+        cursor: pointer;
+    }
+
+</style>
+<body onkeydown="keyLogin();">
+<div class="shuru">
+
+    <p id="userlogin">用户登录</p>
+    <input type="text" name="username" placeholder="用户名" id="user"><br>
+    <input type="password" name="password" placeholder="密码" id="pwd"><br>
+    <input type="submit" name="确定" id="login" value="登录">
+
+</div>
+</body>
+</html>

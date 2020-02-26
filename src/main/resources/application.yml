@@ -1,0 +1,33 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.tomingto.management.pojo.*
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: true
+    multiple-result-sets-enabled: true
+    use-column-label: true
+    call-setters-on-nulls: true
+    local-cache-scope: session
+    map-underscore-to-camel-case: true
+    default-executor-type: BATCH
+    auto-mapping-behavior: PARTIAL
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
